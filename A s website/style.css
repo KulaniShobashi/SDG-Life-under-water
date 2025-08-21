@@ -17,6 +17,34 @@
   --border: #e2e8f0; /* Light border */
   --hover: #f1f5f9; /* Light hover */
 }
+.hero {
+  position: relative;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: url("images/sea-turtle-underwater.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; /* Parallax effect */
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Overlay for readability */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -108,11 +136,19 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+.hero-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("/placeholder.svg?height=800&width=1200");
+  background-image: url("images/sea-turtle-underwater.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
