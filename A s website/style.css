@@ -267,7 +267,7 @@ body {
 }
 
 .btn-primary {
-  background: var(--primary);
+  background:  #2f6097;
   color: white;
 }
 
@@ -304,13 +304,13 @@ body {
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--primary);
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .page-subtitle {
   font-size: 1.125rem;
-  color: var(--text-muted);
+  color: #ffffff;
 }
 
 .section-title {
