@@ -8,7 +8,7 @@
 :root {
   /* Marine Conservation Color Palette */
   --primary: #1e3a5f; /* Deep navy blue */
-  --secondary: #8ea7c5; /* Turquoise */
+  --secondary: #4782cb; /* Turquoise */
   --accent: #ff7f50; /* Coral */
   --background: #f8fafc; /* Light blue-gray */
   --card: #ffffff; /* White */
@@ -180,7 +180,7 @@ body {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   margin-bottom: 1.5rem;
   font-weight: 600;
-  color: var(--secondary);
+  color: rgba(255, 255, 255, 0.8);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -838,7 +838,7 @@ body {
 .about-hero-bg {
   position: relative;
   height: 24rem;
-  background-image: url("/placeholder.svg?height=400&width=800");
+  background-image: url("images/turtle babess.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 0.75rem;
@@ -890,15 +890,15 @@ body {
 }
 
 .research-bg {
-  background-image: url("/placeholder.svg?height=200&width=300");
+  background-image: url(images/marine\ pollution.jpeg);
 }
 
 .education-bg {
-  background-image: url("/placeholder.svg?height=200&width=300");
+  background-image: url(images/ocean\ acidification.jpg);
 }
 
 .conservation-bg {
-  background-image: url("/placeholder.svg?height=200&width=300");
+  background-image: url(images/sus\ fish.jpeg);
 }
 
 .impact-stats {
@@ -985,6 +985,14 @@ body {
 .topic-card .card-image {
   height: 12rem;
   margin-bottom: 0;
+  overflow: hidden;
+}
+
+.topic-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
 }
 
 .topic-card .card-content {
@@ -1021,7 +1029,7 @@ body {
 }
 
 .footer-section h4 {
-  color: var(--secondary);
+  color: #77adeb;
   margin-bottom: 1rem;
   font-size: 1.25rem;
   font-weight: 600;
