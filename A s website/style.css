@@ -1362,20 +1362,22 @@ vertical-align: middle;
   margin: 0 auto 1rem;
 }
 
-.sarah-photo {
+.chris-photo {
+  background-image: url("images/chris.jpg?height=180&width=150");
+}
+
+.kulani-photo {
+  background-image: url("images/kulani.jpg?height=150&width=150");
+}
+
+.azeem-photo {
   background-image: url("/placeholder.svg?height=150&width=150");
 }
 
-.james-photo {
-  background-image: url("/placeholder.svg?height=150&width=150");
+.amna-photo {
+  background-image: url("images/amna.jpg?height=150&width=150");
 }
-
-.maria-photo {
-  background-image: url("/placeholder.svg?height=150&width=150");
-}
-
-/* Added fourth team member photo */
-.alex-photo {
+.hassan-photo {
   background-image: url("/placeholder.svg?height=150&width=150");
 }
 
@@ -1383,6 +1385,20 @@ vertical-align: middle;
   color: var(--text-muted);
   margin-bottom: 1rem;
 }
+.team-cards-center {
+  display: flex;
+  justify-content: center;       
+  gap: 2rem;
+  width: 100%;                   
+  grid-column: 1 / -1;           
+  flex-wrap: wrap;
+}
+
+.team-cards-center .team-card {
+  flex: 1 1 280px;               
+  max-width: 380px;              /* match the above rows */
+}
+
 
 .team-bio {
   color: var(--text-muted);
