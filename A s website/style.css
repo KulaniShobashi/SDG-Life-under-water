@@ -8,7 +8,7 @@
 :root {
   /* Marine Conservation Color Palette */
   --primary: #1e3a5f; /* Deep navy blue */
-  --secondary: #4a9eff; /* Turquoise */
+  --secondary: #8ea7c5; /* Turquoise */
   --accent: #ff7f50; /* Coral */
   --background: #f8fafc; /* Light blue-gray */
   --card: #ffffff; /* White */
@@ -984,29 +984,29 @@ body {
   margin-bottom: 2rem;
 }
 
-.footer-section h3 {
+.footer-section h4 {
   color: var(--secondary);
   margin-bottom: 1rem;
   font-size: 1.25rem;
   font-weight: 600;
 }
 
-.footer-links {
+.footer-section {
   list-style: none;
   padding: 0;
 }
 
-.footer-links li {
+.footer-section li {
   margin-bottom: 0.5rem;
 }
 
-.footer-links a {
-  color: #e2e8f0;
+.footer-section a {
+  color:#ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
+.footer-section a:hover {
   color: var(--secondary);
 }
 
