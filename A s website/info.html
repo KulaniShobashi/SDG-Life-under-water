@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info - UMI EDU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/logo.png" alt="UMI EDU Logo" class="logo">
+                <span class="brand-text">umi.edu</span>
+            </div>
+            <div class="nav-links">
+                <!-- Updated navigation to use home.html and include table.html -->
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="info.html" class="nav-link active">Info</a>
+                <a href="table.html" class="nav-link">Table</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Marine Conservation Info</h1>
+                <p class="page-subtitle">UN SDG 14 targets and current progress in ocean conservation</p>
+            </div>
+
+            <!-- Restructured into interactive topic cards -->
+            <div class="topics-grid">
+                <div class="topic-card" data-topic="marine-creatures">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Amazing Marine Creatures">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Amazing Marine Creatures</h3>
+                        <p class="card-description">Discover the incredible diversity of ocean life and their conservation status</p>
+                        <button class="btn btn-secondary learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="topic-card" data-topic="ocean-facts">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Cool Ocean Facts">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cool Ocean Facts</h3>
+                        <p class="card-description">Essential statistics and fascinating data about our planet's oceans</p>
+                        <button class="btn btn-secondary learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="topic-card" data-topic="sdg-targets">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Save the Seas SDG 14">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Save the Seas: SDG 14</h3>
+                        <p class="card-description">UN Sustainable Development Goal 14 objectives and progress tracking</p>
+                        <button class="btn btn-secondary learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="topic-card" data-topic="conservation-efforts">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Why Conservation Matters">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Why Conservation Matters</h3>
+                        <p class="card-description">Understanding the critical importance of protecting marine environments</p>
+                        <button class="btn btn-secondary learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="topic-card" data-topic="ocean-tech">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Ocean Tech Innovation">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Ocean Tech & Innovation</h3>
+                        <p class="card-description">Cutting-edge technology advancing marine research and conservation</p>
+                        <button class="btn btn-secondary learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="topic-card" data-topic="fun-discoveries">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Fun Ocean Discoveries">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fun Ocean Discoveries</h3>
+                        <p class="card-description">Amazing recent discoveries and surprising facts about ocean life</p>
+                        <button class="btn btn-secondary learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Added detailed content sections that show/hide based on card selection -->
+            <div class="detailed-content">
+                <div id="marine-creatures-content" class="content-section">
+                    <h2>Amazing Marine Creatures</h2>
+                    <div class="species-grid">
+                        <div class="species-card">
+                            <h4>Green Sea Turtle</h4>
+                            <p><strong>Habitat:</strong> Coastal waters, coral reefs</p>
+                            <p>Large marine reptile affected by plastic pollution and habitat loss</p>
+                            <span class="status endangered">Endangered</span>
+                        </div>
+                        <div class="species-card">
+                            <h4>Blue Whale</h4>
+                            <p><strong>Habitat:</strong> Open ocean, deep waters</p>
+                            <p>Largest animal on Earth, recovering from whaling but threatened by ship strikes</p>
+                            <span class="status endangered">Endangered</span>
+                        </div>
+                        <div class="species-card">
+                            <h4>Manta Ray</h4>
+                            <p><strong>Habitat:</strong> Tropical and subtropical waters</p>
+                            <p>Large filter feeder threatened by fishing gear entanglement</p>
+                            <span class="status vulnerable">Vulnerable</span>
+                        </div>
+                        <div class="species-card">
+                            <h4>Vaquita Porpoise</h4>
+                            <p><strong>Habitat:</strong> Gulf of California</p>
+                            <p>World's most endangered marine mammal, fewer than 30 remain</p>
+                            <span class="status endangered">Critically Endangered</span>
+                        </div>
+                        <div class="species-card">
+                            <h4>Atlantic Bluefin Tuna</h4>
+                            <p><strong>Habitat:</strong> Open ocean, temperate waters</p>
+                            <p>Commercially valuable species recovering from severe overfishing</p>
+                            <span class="status vulnerable">Vulnerable</span>
+                        </div>
+                        <div class="species-card">
+                            <h4>Coral Reefs</h4>
+                            <p><strong>Habitat:</strong> Tropical shallow waters</p>
+                            <p>Biodiversity hotspots severely impacted by ocean acidification and warming</p>
+                            <span class="status threatened">Critically Threatened</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ocean-facts-content" class="content-section">
+                    <h2>Cool Ocean Facts</h2>
+                    <div class="facts-grid">
+                        <div class="fact-card">
+                            <h3 class="fact-number">71%</h3>
+                            <p>Of Earth's surface is covered by oceans</p>
+                        </div>
+                        <div class="fact-card">
+                            <h3 class="fact-number">3 billion+</h3>
+                            <p>People depend on oceans for livelihoods</p>
+                        </div>
+                        <div class="fact-card">
+                            <h3 class="fact-number">37.7%</h3>
+                            <p>Of global fishery stocks are overfished (2021)</p>
+                        </div>
+                        <div class="fact-card">
+                            <h3 class="fact-number">30%</h3>
+                            <p>More acidic than pre-industrial times</p>
+                        </div>
+                        <div class="fact-card">
+                            <h3 class="fact-number">80%</h3>
+                            <p>Of ocean remains unexplored</p>
+                        </div>
+                        <div class="fact-card">
+                            <h3 class="fact-number">50%</h3>
+                            <p>Of oxygen comes from ocean phytoplankton</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sdg-targets-content" class="content-section">
+                    <h2>Save the Seas: SDG 14</h2>
+                    <div class="targets-list">
+                        <div class="target-item">
+                            <h4>Target 14.1</h4>
+                            <p>Reduce marine pollution, particularly from land-based activities by 2025</p>
+                        </div>
+                        <div class="target-item">
+                            <h4>Target 14.2</h4>
+                            <p>Sustainably manage and protect marine ecosystems by 2020</p>
+                        </div>
+                        <div class="target-item">
+                            <h4>Target 14.3</h4>
+                            <p>Minimize ocean acidification through enhanced scientific cooperation</p>
+                        </div>
+                        <div class="target-item">
+                            <h4>Target 14.4</h4>
+                            <p>End overfishing and restore fish stocks by 2020</p>
+                        </div>
+                        <div class="target-item">
+                            <h4>Target 14.5</h4>
+                            <p>Conserve at least 10% of coastal and marine areas by 2020</p>
+                        </div>
+                        <div class="target-item">
+                            <h4>Target 14.6</h4>
+                            <p>Eliminate harmful fisheries subsidies by 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="conservation-efforts-content" class="content-section">
+                    <h2>Why Conservation Matters</h2>
+                    <div class="efforts-grid">
+                        <div class="effort-card">
+                            <h4>Biodiversity Protection</h4>
+                            <p>Oceans contain 80% of all life on Earth. Marine ecosystems support countless species and provide essential services like climate regulation.</p>
+                        </div>
+                        <div class="effort-card">
+                            <h4>Economic Impact</h4>
+                            <p>Ocean-based industries contribute $2.5 trillion annually to the global economy and support 31 million jobs worldwide.</p>
+                        </div>
+                        <div class="effort-card">
+                            <h4>Climate Regulation</h4>
+                            <p>Oceans absorb 30% of CO2 emissions and regulate global temperature, making marine health critical for climate stability.</p>
+                        </div>
+                        <div class="effort-card">
+                            <h4>Food Security</h4>
+                            <p>Over 3 billion people rely on seafood as their primary protein source, making sustainable fisheries essential for global nutrition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ocean-tech-content" class="content-section">
+                    <h2>Ocean Tech & Innovation</h2>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <h4>Autonomous Underwater Vehicles (AUVs)</h4>
+                            <p>Advanced robots explore deep ocean trenches, collecting data on previously unknown ecosystems and species.</p>
+                        </div>
+                        <div class="tech-card">
+                            <h4>Satellite Ocean Monitoring</h4>
+                            <p>Real-time tracking of ocean temperature, currents, and marine life movements using advanced satellite technology.</p>
+                        </div>
+                        <div class="tech-card">
+                            <h4>DNA Environmental Sampling</h4>
+                            <p>Revolutionary technique detecting marine species through water samples, revolutionizing biodiversity monitoring.</p>
+                        </div>
+                        <div class="tech-card">
+                            <h4>Ocean Cleanup Technology</h4>
+                            <p>Innovative systems removing plastic pollution from ocean gyres and preventing further marine contamination.</p>
+                        </div>
+                        <div class="tech-card">
+                            <h4>Coral Restoration Tech</h4>
+                            <p>3D printing and genetic techniques helping restore damaged coral reefs and increase their climate resilience.</p>
+                        </div>
+                        <div class="tech-card">
+                            <h4>Smart Fishing Gear</h4>
+                            <p>IoT-enabled fishing equipment reducing bycatch and improving sustainable fishing practices worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fun-discoveries-content" class="content-section">
+                    <h2>Fun Ocean Discoveries</h2>
+                    <div class="discoveries-grid">
+                        <div class="discovery-card">
+                            <h4>Bioluminescent Seas</h4>
+                            <p>Scientists discovered new species of glowing plankton that create spectacular light shows in ocean waters, helping us understand marine ecosystems.</p>
+                        </div>
+                        <div class="discovery-card">
+                            <h4>Underwater Waterfalls</h4>
+                            <p>Dense, cold water creates the illusion of underwater waterfalls in places like Mauritius, demonstrating ocean's incredible physics.</p>
+                        </div>
+                        <div class="discovery-card">
+                            <h4>Singing Whales</h4>
+                            <p>Humpback whales create complex songs that can travel thousands of miles underwater, with new melodies discovered each year.</p>
+                        </div>
+                        <div class="discovery-card">
+                            <h4>Deep Sea Giants</h4>
+                            <p>Recent expeditions found colossal squid specimens and new species of deep-sea fish in previously unexplored ocean trenches.</p>
+                        </div>
+                        <div class="discovery-card">
+                            <h4>Ocean Memory</h4>
+                            <p>Researchers found that ocean currents have "memory" - patterns that influence weather and climate for decades.</p>
+                        </div>
+                        <div class="discovery-card">
+                            <h4>Plastic-Eating Bacteria</h4>
+                            <p>Scientists discovered marine bacteria that can break down plastic pollution, offering hope for natural ocean cleanup solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Added footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>UMI EDU</h4>
+                    <p>Dedicated to marine conservation education and UN SDG 14 awareness.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="info.html">Marine Info</a></li>
+                        <li><a href="table.html">Species Data</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@umi.edu</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UMI EDU. All rights reserved. | Supporting UN SDG 14</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

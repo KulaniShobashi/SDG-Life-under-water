@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UMI EDU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/logo.png" alt="UMI EDU Logo" class="logo">
+                <span class="brand-text">umi.edu</span>
+            </div>
+            <div class="nav-links">
+                <!-- Updated navigation to use home.html and include table.html -->
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="info.html" class="nav-link">Info</a>
+                <a href="table.html" class="nav-link">Table</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Added ocean background for contact page -->
+    <div class="contact-page-bg"></div>
+    <div class="contact-bg-overlay"></div>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">CONTACT US</h1>
+                <p class="page-subtitle">Get in touch with our marine conservation team</p>
+            </div>
+
+            <!-- Centered the contact form by removing grid layout -->
+            <div class="contact-form-container">
+                <div class="contact-form-card">
+                    <h3 class="card-title">Send us a message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="organization">Organization/School</label>
+                                <input type="text" id="organization" name="organization">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age-group">Age Group</label>
+                            <select id="age-group" name="age-group">
+                                <option value="">Select age group</option>
+                                <option value="under-18">Under 18</option>
+                                <option value="18-25">18-25</option>
+                                <option value="26-35">26-35</option>
+                                <option value="36-50">36-50</option>
+                                <option value="over-50">Over 50</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Interest Area *</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="interest" value="research" required>
+                                    <span>Marine Research</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="interest" value="conservation" required>
+                                    <span>Conservation Programs</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="interest" value="education" required>
+                                    <span>Educational Resources</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="interest" value="volunteer" required>
+                                    <span>Volunteer Work</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>How did you hear about us?</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="source" value="social-media">
+                                    <span>Social Media</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="source" value="school">
+                                    <span>School/University</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="source" value="friend">
+                                    <span>Friend/Family</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="source" value="search">
+                                    <span>Internet Search</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>What services are you interested in?</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="workshops">
+                                    <span>Educational Workshops</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="materials">
+                                    <span>Educational Materials</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="partnership">
+                                    <span>Partnership Opportunities</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="research">
+                                    <span>Research Collaboration</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Previous marine conservation experience</label>
+                            <select id="experience" name="experience">
+                                <option value="">Select experience level</option>
+                                <option value="none">No experience</option>
+                                <option value="beginner">Beginner (1-2 years)</option>
+                                <option value="intermediate">Intermediate (3-5 years)</option>
+                                <option value="advanced">Advanced (5+ years)</option>
+                                <option value="professional">Professional</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your interest in marine conservation and how we can help you..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span>Subscribe to our marine conservation newsletter</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Added footer with contact info removed -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>UMI EDU</h4>
+                    <p>Dedicated to marine conservation education and UN SDG 14 awareness.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="info.html">Marine Info</a></li>
+                        <li><a href="table.html">Species Data</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://sdgs.un.org/goals/goal14" target="_blank">UN SDG 14</a></li>
+                        <li><a href="#" onclick="return false;">Marine Research</a></li>
+                        <li><a href="#" onclick="return false;">Conservation Programs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UMI EDU. All rights reserved. | Supporting UN SDG 14</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
