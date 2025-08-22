@@ -291,10 +291,7 @@ body {
 }
 
 /* Main Content */
-.main-content {
-  padding: 3rem 0;
-  min-height: calc(100vh - 4rem);
-}
+
 
 .page-header {
   text-align: center;
@@ -304,13 +301,13 @@ body {
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
 .page-subtitle {
   font-size: 1.125rem;
-  color: #ffffff;
+  color: var(--primary);
 }
 
 .section-title {
