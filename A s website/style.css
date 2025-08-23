@@ -1256,6 +1256,40 @@ vertical-align: middle;
   color: var(--secondary);
   margin-bottom: 1rem;
 }
+/* tech grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.tech-card {
+  background: rgba(74, 158, 255, 0.05);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.tech-card h4 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+/* discoveries grid */
+.discoveries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.discovery-card {
+  background: rgba(74, 158, 255, 0.05);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.discovery-card h4 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
 
 /* About Page */
 .about-hero {
@@ -1623,6 +1657,7 @@ vertical-align: middle;
   .efforts-grid {
     grid-template-columns: 1fr;
   }
+  
 
   .vision-goals {
     grid-template-columns: 1fr;
