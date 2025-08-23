@@ -1262,7 +1262,7 @@ vertical-align: middle;
   margin-bottom: 4rem;
 }
 
-.about-hero-bg {
+/*.about-hero-bg {
   position: relative;
   height: 24rem;
   background-image: url("images/turtle babess.jpg");
@@ -1272,13 +1272,49 @@ vertical-align: middle;
   display: flex;
   align-items: center;
   justify-content: center;
+}*/
+
+.about-hero {
+  position: relative;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+
+  background: url("images/turtle\ babess.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.about-hero-bg {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+.about-hero-bg h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 .about-hero-title {
   font-size: 3rem;
   font-weight: bold;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.31);
 }
 
 .about-mission {
