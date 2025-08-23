@@ -215,11 +215,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.hero-overlay {
+/* .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(30, 58, 95, 0.7);
-}
+} */
 
 .hero-content {
   position: relative;
