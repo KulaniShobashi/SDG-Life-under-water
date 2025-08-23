@@ -1405,14 +1405,21 @@ vertical-align: middle;
   width: 100%;                   
   grid-column: 1 / -1;           
   flex-wrap: wrap;
-  height:15px;
+  /*height:15px;*/
+  height: auto;  
+  align-items: stretch;
   
 }
 
 .team-cards-center .team-card {
   flex: 1 1 280px;               
-  max-width: 380px;              /* match the above rows */
-}
+  max-width: 380px;    
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}          /* match the above rows */
+
 
 
 .team-bio {
