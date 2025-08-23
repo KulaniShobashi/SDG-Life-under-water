@@ -1256,42 +1256,63 @@ vertical-align: middle;
   color: var(--secondary);
   margin-bottom: 1rem;
 }
+/* tech grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.tech-card {
+  background: rgba(74, 158, 255, 0.05);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.tech-card h4 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+/* discoveries grid */
+.discoveries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.discovery-card {
+  background: rgba(74, 158, 255, 0.05);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.discovery-card h4 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
 
 /* About Page */
 .about-hero {
-  position: relative;
-  min-height: 100vh; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-
-
-  background: url("images/turtle\ babess.jpg") no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed; 
-}
-
-.about-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4); 
-  z-index: 1;
+  margin-bottom: 4rem;
 }
 
 .about-hero-bg {
   position: relative;
-  z-index: 2;
-  max-width: 900px;
-  padding: 0 1rem;
+  height: 24rem;
+  background-image: url("images/turtle babess.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-hero-bg h1 {
+.about-hero-title {
   font-size: 3rem;
-  font-weight: 700;
-  margin: 0;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about-mission {
@@ -1381,14 +1402,14 @@ vertical-align: middle;
 }
 
 .azeem-photo {
-  background-image: url("/placeholder.svg?height=150&width=150");
+  background-image: url("https://avatar.iran.liara.run/public/30");
 }
 
 .amna-photo {
   background-image: url("images/amna.jpg?height=150&width=150");
 }
 .hassan-photo {
-  background-image: url("/placeholder.svg?height=150&width=150");
+  background-image: url("https://avatar.iran.liara.run/public/7");
 }
 
 .team-role {
@@ -1636,6 +1657,7 @@ vertical-align: middle;
   .efforts-grid {
     grid-template-columns: 1fr;
   }
+  
 
   .vision-goals {
     grid-template-columns: 1fr;
