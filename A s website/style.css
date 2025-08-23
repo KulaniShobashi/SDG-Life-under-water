@@ -681,7 +681,7 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--gradient-coral);
+  background-color:rgb(59, 68, 147);
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;
